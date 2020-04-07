@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Welcome
+        Welcome, this site is under construction.
       </header>
     </div>
   );
