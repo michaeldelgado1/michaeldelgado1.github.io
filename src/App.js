@@ -1,41 +1,51 @@
 import React from 'react';
 import './App.css';
-import Nav from './components/nav'
+import Nav from './components/Nav'
+import Home from './components/Home'
 
+// NOTE: HashRouter is correct as far as I can tell for GitHubPages. 
+//  If I can hack BrowserRouter to use hashes instead, I'd totally swap for that.
 import {
-  // BrowserRouter as Router,
   HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        Welcome, this site is under construction.
-      </header>
-
       <Router>
       <div>
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/test">
-            <Nav />
-            Test Page
+            <MockHeader />
+            <Home />
           </Route>
           <Route path="/users">
-          <Nav />
+          <MockHeader />
             Users Page
           </Route>
           <Route path="/">
+          <header className="App-header">
+            Welcome, this site is under construction.
+          </header>
           </Route>
         </Switch>
       </div>
     </Router>
     </div>
   );
+}
+
+const MockHeader = () => {
+  return(
+    <React.Fragment>
+      <header className="App-header">
+          Michael Delgado
+      </header>
+      <Nav />
+    </React.Fragment>
+  )
 }
 
 export default App;
