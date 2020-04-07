@@ -1,5 +1,6 @@
 body {
   background-color: #282c34;
+  color: white;
 }
 
 .App {
@@ -13,9 +14,20 @@ body {
   justify-content: center;
   align-items: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
+nav{
+  display:flex;
+  justify-content: center;
+}
+
+nav > ul{
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+a {
   color: #61dafb;
 }
