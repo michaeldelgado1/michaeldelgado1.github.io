@@ -15,23 +15,26 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-      <div>
         <Switch>
           <Route path="/test">
             <MockHeader />
+            <div className="Welcome">
+              Welcome
+            </div>
             <Home />
           </Route>
-          <Route path="/users">
+          <Route path="/blog">
           <MockHeader />
-            Users Page
+          <div className="Welcome">
+            Blog Page
+          </div>
           </Route>
           <Route path="/">
-          <header className="App-header">
+          <div className="Welcome">
             Welcome, this site is under construction.
-          </header>
+          </div>
           </Route>
         </Switch>
-      </div>
     </Router>
     </div>
   );
@@ -39,12 +42,12 @@ const App = () => {
 
 const MockHeader = () => {
   return(
-    <React.Fragment>
+    <div className="topHeader">
       <header className="App-header">
           Michael Delgado
       </header>
       <Nav />
-    </React.Fragment>
+    </div>
   )
 }
 
