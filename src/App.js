@@ -6,7 +6,8 @@ import Home from './components/Home'
 // NOTE: HashRouter is correct as far as I can tell for GitHubPages. 
 //  If I can hack BrowserRouter to use hashes instead, I'd totally swap for that.
 import {
-  HashRouter as Router,
+  // HashRouter as Router,
+  Router,
   Switch,
   Route
 } from "react-router-dom";
