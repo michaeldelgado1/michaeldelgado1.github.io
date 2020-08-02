@@ -31,7 +31,7 @@ const App = () => {
           </Route>
           <Route path="/">
           <div className="Welcome">
-            Welcome, this site is under construction.
+            Welcome, this site is under construction. 
           </div>
           </Route>
         </Switch>
