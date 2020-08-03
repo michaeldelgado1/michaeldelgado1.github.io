@@ -7,7 +7,7 @@ import Home from './components/Home'
 //  If I can hack BrowserRouter to use hashes instead, I'd totally swap for that.
 import {
   // HashRouter as Router,
-  Router,
+  BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
